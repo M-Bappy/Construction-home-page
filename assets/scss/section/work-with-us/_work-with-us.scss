@@ -1,0 +1,94 @@
+/*Work with us start here*/
+
+.work-with-us {
+    padding: 60px 0;
+    background-color: $bgOne;
+    .section-title {
+        h2 {}
+        h4 {
+            margin: 26px 0 45px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .works-wrapper {
+        position: relative;
+        padding: 40px 0;
+        background: linear-gradient($bgTwo, $bgTwo);
+        @include background-content($repeat: no-repeat, $size: 55% 100%, $position: left center);
+        @media (max-width: 767.98px) {
+            background-size: 100% 100%;
+        }
+        .item-indicators {
+            .nav-pills .nav-link,
+            .nav-pills .show>.nav-link {
+                display: flex;
+                color: #fff;
+                background-color: transparent;
+                .arrow {
+                    i {
+                        margin-left: 4px;
+                        color: $primary-color;
+                    }
+                }
+                p {
+                    margin-bottom: 30px;
+                    margin-left: 12px;
+                    font-size: 20px;
+                    text-align: left;
+                    @media (max-width: 991.98px) {
+                        font-size: 18px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
+                color: $primary-color;
+            }
+        }
+        .work-items {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 31px;
+            height: 410px;
+            .tab-content {
+                .tab-pane {
+                    height: 100%;
+                    width: 100%;
+                }
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                img {
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            @media (max-width: 1199.98px) {
+                top: 65px;
+            }
+            @media (max-width: 991.98px) {
+                top: 100px;
+                height: 450px;
+            }
+            @media (max-width: 767.98px) {
+                position: relative;
+                top: 40px;
+                padding: 0 30px;
+                width: 100%;
+                height: 400px;
+            }
+            .hr {
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+/*Work with us end here*/

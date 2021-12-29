@@ -1,0 +1,61 @@
+/*contact area start*/
+
+.contact {
+    position: relative;
+    @include background-content();
+    background-image: url(../images/contact/contact-bg.png);
+    z-index: 1;
+    &::before {
+        @include overlay(.7, rgb(31, 30, 30));
+    }
+    .contact-wrapper {
+        padding: 100px 0;
+        @media (max-width: 767.98px) {
+            padding: 80px 0;
+        }
+        .contact-contents {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 55px;
+                text-transform: capitalize;
+                font-weight: 700;
+                letter-spacing: 9px;
+                color: $primary-color;
+                @media (max-width: 767.98px) {
+                    font-size: 35px;
+                    letter-spacing: 7px;
+                }
+                .arrow {
+                    @media (max-width: 767.98px) {
+                        margin-left: 10px;
+                        .arrow-line {
+                            height: 40px !important;
+                        }
+                        i {
+                            margin-left: 5px;
+                            font-size: 25px;
+                        }
+                    }
+                    margin-left: 15px;
+                    .arrow-line {
+                        height: 50px;
+                        width: 3px;
+                        background-color: $primary-color;
+                    }
+                    i {
+                        margin-left: 7px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*contact area end*/
